@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.css';
+import React, { Component } from 'react'
+
+ class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      person: {}
+    };
+   
+
+  }
+
+  render() {
+    return (
+      <div> Alaina Harris<br/>
+              704 968 3413<br/>
+             November 23, 1997
+            </div>
+    )
+  }
 }
+
 
 export default App;
